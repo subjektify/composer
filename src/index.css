@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: #F1F1F1 !important;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -15,4 +16,21 @@ code {
 .home {
   text-align: center;
   height: 100vh;
+}
+
+.mt-none {
+  margin-top: 0 !important;
+}
+
+.mt-md {
+  margin-top: 1.5em;
+}
+
+.mt-lg {
+  margin-top: 2em;
+}
+
+.mv-none {
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
 }

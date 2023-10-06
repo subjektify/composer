@@ -1,3 +1,4 @@
+import logo from '../logo.svg';
 import {
     Grid,
     Header,
@@ -7,28 +8,30 @@ import {
 
 export const Home = () => {
     return (
-        <Grid className="home">
-            <Grid.Column verticalAlign="middle">
+        <Grid>
+            <Grid.Column className='mt-lg' textAlign='center'>
 
-                <Header as='h1'>How would you like to start?</Header>
+                <Image centered size='tiny' src={logo} />
+                <Header as='h1'>Subjektify Composer</Header>
+                <Header as='h4' className='mv-none'>Version: 0.0.1</Header>
 
                 <List horizontal selection relaxed size="big">
 
                     <List.Item>
-                        <Image size="tiny" src='https://assets.grams.dev/subjektify/home/default.png' />
-                        <List.Header>Default Namespace</List.Header>
+                        <Image size="tiny" src='https://assets.grams.dev/subjektify/home/new.png' />
+                        <List.Header>New Namespace</List.Header>
                     </List.Item>
 
                     <List.Item>
                         <Image size="tiny" src='https://assets.grams.dev/subjektify/home/template.png' />
-                        <List.Header>From Template</List.Header>
+                        <List.Header>Use a Template</List.Header>
                     </List.Item>
 
                     <List.Item>
-                        <Image src='https://assets.grams.dev/subjektify/home/connect.png' verticalAlign="middle" />
-                        <List.Header>Connect locally</List.Header>
+                        <Image size="tiny" src='https://assets.grams.dev/subjektify/home/connect.png' />
+                        <List.Header>Connect Locally</List.Header>
                     </List.Item>
-                    
+
                 </List>
             </Grid.Column>
         </Grid>
