@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Header, Icon, Image, Form, List, Message, Modal } from 'semantic-ui-react';
+import { Button, Icon, Image, Form, List, Message, Modal } from 'semantic-ui-react';
 
 export const NewNamespace = () => {
 
