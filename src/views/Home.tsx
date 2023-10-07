@@ -11,7 +11,7 @@ export const Home = () => {
         <Grid>
             <Grid.Column className='mt-lg' textAlign='center'>
 
-                <Image centered size='tiny' src={logo} />
+                <Image centered size='small' src={logo} />
                 <Header as='h1'>Subjektify Composer</Header>
                 <Header as='h4' className='mv-none'>Version: 0.0.1</Header>
 
