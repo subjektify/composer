@@ -1,4 +1,4 @@
-export const MainView = () => {
+export const NamespaceView = () => {
     return (
         <div />
     );

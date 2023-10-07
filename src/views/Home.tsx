@@ -1,3 +1,4 @@
+import { NewNamespace } from '../components/home';
 import logo from '../logo.svg';
 import {
     Grid,
@@ -17,10 +18,7 @@ export const Home = () => {
 
                 <List horizontal selection relaxed size="big">
 
-                    <List.Item>
-                        <Image size="tiny" src='https://assets.grams.dev/subjektify/home/new.png' />
-                        <List.Header>New Namespace</List.Header>
-                    </List.Item>
+                    <NewNamespace />
 
                     <List.Item>
                         <Image size="tiny" src='https://assets.grams.dev/subjektify/home/template.png' />
