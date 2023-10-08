@@ -1,5 +1,6 @@
 import { List, Image, Popup } from "semantic-ui-react"
-import { VscBeaker, VscDebugAlt, VscExtensions, VscFiles, VscRepo, VscRocket, VscSearch, VscSettingsGear, VscSourceControl, VscVmConnect } from "react-icons/vsc"
+import { IoExtensionPuzzleOutline } from "react-icons/io5"
+import { VscBeaker, VscDebugAlt, VscExtensions, VscFiles, VscRocket, VscSearch, VscSettingsGear, VscSourceControl, VscVmConnect } from "react-icons/vsc"
 
 export const MenuView = () => {
 
@@ -28,7 +29,7 @@ export const MenuView = () => {
                 <Popup position="right center" content='Deploy and Publish' trigger={<VscRocket size={size} />} />
             </List.Item>
             <List.Item>
-                <Popup position="right center" content='Blueprints' trigger={<VscRepo size={size} />} />
+                <Popup position="right center" content='Blueprints' trigger={<IoExtensionPuzzleOutline size={size} />} />
             </List.Item>
             <List.Item>
                 <Popup position="right center" content='Plugins' trigger={<VscExtensions size={size} />} />

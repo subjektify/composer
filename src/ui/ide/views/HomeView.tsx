@@ -1,4 +1,4 @@
-import { Grid, Header, Icon, Item, List, Message, Segment } from "semantic-ui-react"
+import { Card, Grid, Header, Icon, Item, List, Message, Segment } from "semantic-ui-react"
 
 export const HomeView = () => {
     return (
@@ -32,59 +32,138 @@ export const HomeView = () => {
                     <List.Item>
                         <Icon color="orange" size="large" name="stack overflow" />
                     </List.Item>
+                    <List.Item>
+                        <Icon color="red" size="large" name="youtube" />
+                    </List.Item>
                 </List>
+
+                <Segment>
+                    <Header>Learn Subjektify</Header>
+                    <List selection size="medium">
+                        <List.Item>
+                            <List.Icon name='book' />
+                            <List.Content>
+                                <List.Header>Read the Handbook</List.Header>
+                                <List.Description>Get comprehensive insights into Subjektify's ecosystem, from basic concepts to advanced features.</List.Description>
+                            </List.Content>
+                        </List.Item>
+                        <List.Item>
+                            <List.Icon name='puzzle' />
+                            <List.Content>
+                                <List.Header>Explore Subjektify Blueprints</List.Header>
+                                <List.Description>Jumpstart your DApp development with pre-designed templates and best practices.</List.Description>
+                            </List.Content>
+                        </List.Item>
+                        <List.Item>
+                            <List.Icon name='video' />
+                            <List.Content>
+                                <List.Header>Watch Tutorials</List.Header>
+                                <List.Description>Visualize the development process with step-by-step video tutorials.</List.Description>
+                            </List.Content>
+                        </List.Item>
+                        <List.Item>
+                            <List.Icon name='users' />
+                            <List.Content>
+                                <List.Header>Join the Community</List.Header>
+                                <List.Description>Engage with other developers, share your projects, and get your questions answered.</List.Description>
+                            </List.Content>
+                        </List.Item>
+                    </List>
+                </Segment>
 
             </Grid.Column>
 
             <Grid.Column width={11}>
 
                 <Header>Get Started with a Blueprint</Header>
-                <List horizontal selection celled className="centered">
-                    <List.Item className="getstarted-item">
-                        <List.Icon size="big" name="money bill alternate" />
-                        <List.Content>
-                        <List.Header>Token</List.Header>
-                        <List.Description>Create your own cryptocurrency based on the ERC20 standard.</List.Description>
-                        </List.Content>
-                    </List.Item>
-                    <List.Item className="getstarted-item">
-                        <List.Icon size="big" name="gem" />
-                        <List.Content>
-                        <List.Header>NFT Collection</List.Header>
-                        <List.Description>Create your own NFT collection based on the ERC721 standard.</List.Description>
-                        </List.Content>
-                    </List.Item>
-                    <List.Item className="getstarted-item">
-                        <List.Icon size="big" name="building" />
-                        <List.Content>
-                        <List.Header>Organization</List.Header>
-                        <List.Description>Create your own organizational DAO based on the ERC4824 standard.</List.Description>
-                        </List.Content>
-                    </List.Item>
-                    <List.Item className="getstarted-item">
-                        <List.Icon size="big" name="rocket" />
-                        <List.Content>
-                        <List.Header>Space</List.Header>
-                        <List.Description>Create your own space that is compatible with Soonaverse.</List.Description>
-                        </List.Content>
-                    </List.Item>
-                </List>
+                <Card.Group>
+
+                    <Card onClick={console.log}>
+                        <Card.Content>
+                            <Card.Header content='Token' />
+                            <Card.Meta content='DeFi' />
+                            <Card.Description content='Create your own cryptocurrency based on the ERC20 standard.' />
+                        </Card.Content>
+                    </Card>
+
+                    <Card onClick={console.log}>
+                        <Card.Content
+                            header='NFT Collection'
+                            meta='Collectibles'
+                            description='Create your own NFT collection based on the ERC721 standard.'
+                        />
+                    </Card>
+
+                    <Card onClick={console.log}
+                        header='Organization'
+                        meta='Governance'
+                        description='Create your own organizational DAO based on the ERC4824 standard.'
+                    />
+                </Card.Group>
 
                 <Message warning>
                     <Message.Header><Icon name='warning sign' />Scam Alert</Message.Header>
                     <Message.Content>
                         The only URL Subjektify's composer uses is <b>composer.subjektify.dev</b>.
                         <br />
-                        Be sure to check the URL you are visiting before connecting your wallet. <a href='https://subjektify.dev/docs/develop' target='_blank'  rel="noreferrer">Learn more</a>
+                        Be sure to check the URL you are visiting before connecting your wallet. <a href='https://subjektify.dev/docs/develop' target='_blank' rel="noreferrer">Learn more</a>
                     </Message.Content>
                 </Message>
 
                 <Segment>
                     <Header>Featured Blueprints</Header>
+                    <Card.Group>
+
+                        <Card onClick={console.log}>
+                            <Card.Content>
+                                <Card.Header content='subjektify/Royalty NFT' />
+                                <Card.Meta content='Collectibles' />
+                                <Card.Description content='This blueprint allows you to set and retrieve royalty information for a token.' />
+                            </Card.Content>
+                        </Card>
+
+                        <Card onClick={console.log}>
+                            <Card.Content
+                                header='subjektify/Air Dropper'
+                                meta='DeFi'
+                                description='Create your own NFT collection based on the ERC721 standard.'
+                            />
+                        </Card>
+
+                        <Card onClick={console.log}
+                            header='grams/Name Resolver'
+                            meta='Utility'
+                            description='This blueprint provides a reverse lookup for addresses to their corresponding ENS or GNS names.'
+                        />
+                    </Card.Group>
                 </Segment>
 
                 <Segment>
                     <Header>Featured Plugins</Header>
+                    <Card.Group>
+
+                        <Card onClick={console.log}>
+                            <Card.Content>
+                                <Card.Header content='subjektify/Solidity' />
+                                <Card.Meta content='Build' />
+                                <Card.Description content='Build your subjekt model to solidity smart contracts.' />
+                            </Card.Content>
+                        </Card>
+
+                        <Card onClick={console.log}>
+                            <Card.Content
+                                header='subjektify/TypeScript'
+                                meta='Build'
+                                description='Build your subjekt model to a typescript web3 client.'
+                            />
+                        </Card>
+
+                        <Card onClick={console.log}
+                            header='subjektify/Android'
+                            meta='Build'
+                            description='Build your subjekt model to an Android web3 sdk.'
+                        />
+                    </Card.Group>
                 </Segment>
 
             </Grid.Column>
