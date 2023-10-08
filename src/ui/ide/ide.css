@@ -21,3 +21,11 @@
 .menu-header {
     vertical-align: text-bottom !important;
 }
+
+.getstarted-item {
+    max-width: 200px;
+}
+
+.centered {
+    text-align: center;
+}
