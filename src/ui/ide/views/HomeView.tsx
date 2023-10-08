@@ -75,7 +75,7 @@ export const HomeView = () => {
                     <Message.Content>
                         The only URL Subjektify's composer uses is <b>composer.subjektify.dev</b>.
                         <br />
-                        Be sure to check the URL you are visiting before connecting your wallet. <a>Learn more</a>
+                        Be sure to check the URL you are visiting before connecting your wallet. <a href='https://subjektify.dev/docs/develop' target='_blank'>Learn more</a>
                     </Message.Content>
                 </Message>
 
