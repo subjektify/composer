@@ -1,4 +1,4 @@
-import { Grid, Header, Icon, Image, Item, Label, List, Segment, Tab } from "semantic-ui-react"
+import { Grid, Header, Icon, Item, List, Segment } from "semantic-ui-react"
 
 export const HomeView = () => {
     return (
