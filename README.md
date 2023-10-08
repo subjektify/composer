@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Subjektify Composer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Develop, build, and deploy your decentralized applications effortlessly with Subjektify's Composer.
+
+> This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
