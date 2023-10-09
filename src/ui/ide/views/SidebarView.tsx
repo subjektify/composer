@@ -21,7 +21,10 @@ export const SidebarView = () => {
                         <Dropdown.Item>Test Namespace</Dropdown.Item>
                         <Dropdown.Divider />
                         <Dropdown.Item>
-                            <Dropdown.Header icon='hdd outline' content='Connect locally' />
+                            <Dropdown.Header icon='hdd' content='Connect locally' />
+                        </Dropdown.Item>
+                        <Dropdown.Item>
+                            <Dropdown.Header icon='puzzle' content='From a blueprint' />
                         </Dropdown.Item>
                         <Dropdown.Item>
                             <Dropdown.Header icon='add' content='New namespace' />
