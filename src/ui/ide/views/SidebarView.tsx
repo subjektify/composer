@@ -10,7 +10,7 @@ export const SidebarView = () => {
                 <Dropdown
                     button
                     className='icon'
-                    icon='world'
+                    icon='desktop'
                     labeled
                     placeholder='Default Namespace'
                     fluid
