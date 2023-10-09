@@ -19,8 +19,28 @@ code {
   height: 100vh;
 }
 
+.mb-none {
+  margin-bottom: 0 !important;
+}
+
+.mb-ti {
+  margin-bottom: 0.5em !important;
+}
+
+.mb-sm {
+  margin-bottom: 1em;
+}
+
 .mt-none {
   margin-top: 0 !important;
+}
+
+.mt-ti {
+  margin-top: 0.5em !important;
+}
+
+.mt-sm {
+  margin-top: 1em;
 }
 
 .mt-md {
@@ -34,6 +54,30 @@ code {
 .mv-none {
   margin-bottom: 0 !important;
   margin-top: 0 !important;
+}
+
+.mr-none {
+  margin-right: 0 !important;
+}
+
+.mr-mi {
+  margin-right: 0.25em;
+}
+
+.mr-ti {
+  margin-right: 0.5em;
+}
+
+.mr-sm {
+  margin-right: 1em;
+}
+
+.mr-md {
+  margin-right: 1.5em;
+}
+
+.mr-lg {
+  margin-right: 2em;
 }
 
 @media (prefers-color-scheme: dark) {
