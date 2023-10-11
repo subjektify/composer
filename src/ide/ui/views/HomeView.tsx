@@ -57,28 +57,28 @@ export const HomeView = () => {
 
                 <Header>Learn Subjektify</Header>
                 <List selection size="medium">
-                    <List.Item>
+                    <List.Item as='a' href="https://subjektify.dev/docs/handbook" target="_blank">
                         <List.Icon name='book' />
                         <List.Content>
                             <List.Header>Read the Handbook</List.Header>
                             <List.Description>Get comprehensive insights into Subjektify's ecosystem, from basic concepts to advanced features.</List.Description>
                         </List.Content>
                     </List.Item>
-                    <List.Item>
+                    <List.Item as='a' href="https://blueprints.subjektify.dev" target="_blank">
                         <List.Icon name='puzzle' />
                         <List.Content>
                             <List.Header>Explore Subjektify Blueprints</List.Header>
                             <List.Description>Jumpstart your DApp development with pre-designed templates and best practices.</List.Description>
                         </List.Content>
                     </List.Item>
-                    <List.Item>
+                    <List.Item as='a' href="https://www.youtube.com/@SubjektifyDev" target="_blank">
                         <List.Icon name='video' />
                         <List.Content>
                             <List.Header>Watch Tutorials</List.Header>
                             <List.Description>Visualize the development process with step-by-step video tutorials.</List.Description>
                         </List.Content>
                     </List.Item>
-                    <List.Item>
+                    <List.Item as='a' href="https://discord.gg/7Sdtw2WQvc" target="_blank">
                         <List.Icon name='users' />
                         <List.Content>
                             <List.Header>Join the Community</List.Header>

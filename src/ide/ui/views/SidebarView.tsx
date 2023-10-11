@@ -1,5 +1,5 @@
 import { Dropdown, Popup, Menu } from 'semantic-ui-react'
-import { PiPaintBrush, PiPlanet } from "react-icons/pi"
+import { PiPaintBrush } from "react-icons/pi"
 
 export const SidebarView = () => {
     const size = 24;
@@ -35,9 +35,6 @@ export const SidebarView = () => {
             <Menu.Menu position='right'>
                 <Menu.Item onClick={console.log}>
                     <Popup position="bottom center" content='Composer' trigger={<PiPaintBrush size={size} />} />
-                </Menu.Item>
-                <Menu.Item onClick={console.log}>
-                    <Popup position="bottom center" content='Subject Universe' trigger={<PiPlanet size={size} />} />
                 </Menu.Item>
             </Menu.Menu>
         </Menu>

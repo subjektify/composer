@@ -1,5 +1,5 @@
 import React from 'react';
-import { ComposerIDE } from './ui';
+import { ComposerIDE } from './ide';
 
 function App() {
 

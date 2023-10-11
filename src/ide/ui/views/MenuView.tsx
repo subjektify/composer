@@ -1,5 +1,5 @@
 import { List, Image, Popup } from "semantic-ui-react"
-import { IoExtensionPuzzleOutline } from "react-icons/io5"
+import { IoExtensionPuzzleOutline, IoWalletOutline } from "react-icons/io5"
 import { VscBeaker, VscDebugAlt, VscExtensions, VscFiles, VscRocket, VscSearch, VscSettingsGear, VscSourceControl } from "react-icons/vsc"
 
 export const MenuView = () => {
@@ -33,6 +33,9 @@ export const MenuView = () => {
             </List.Item>
             <List.Item>
                 <Popup position="right center" content='Plugins' trigger={<VscExtensions size={size} />} />
+            </List.Item>
+            <List.Item>
+                <Popup position="right center" content='My Wallet' trigger={<IoWalletOutline size={size} />} />
             </List.Item>
             <List.Item>
                 <Popup position="right center" content='Settings' trigger={<VscSettingsGear size={size} />} />
